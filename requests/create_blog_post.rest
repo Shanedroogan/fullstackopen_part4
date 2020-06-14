@@ -1,9 +1,9 @@
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYW5lIiwiaWQiOiI1ZWU1NTk4NTc1YzVjYTU2MDBlMjExNDEiLCJpYXQiOjE1OTIxMTA4MDh9.hV1Zd4oGztdojFT0kro3tSSL0_rx4Cxzmi28HxzZv6o
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYW5lIiwiaWQiOiI1ZWU1NTk4NTc1YzVjYTU2MDBlMjExNDEiLCJpYXQiOjE1OTIxMTI2OTl9.pHaJbgcVO1XouKqJIlAWijniNMG51iT-gBr2GmkaQHM
 
 {
-    "title": "Token works",
+    "title": "Middleware works",
     "author": "John Bologna",
     "url": "www.com",
     "likes": 11
