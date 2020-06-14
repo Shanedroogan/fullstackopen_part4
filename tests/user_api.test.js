@@ -136,6 +136,21 @@ describe('when there is initially one user in db', () => {
 
     expect(usernames).not.toContain(invalidUser.username)
   })
+
+  test('user can be logged in', async () => {
+    const loginRequest = {
+      username: 'root',
+      password: 'secret'
+    }
+
+    const response = await api.post('/api/login')
+      .send(loginRequest)
+      .expect(200)
+      .expect('Content-Type', /application\/json/)
+
+    expect(response.body.username).toBe(loginRequest.username)
+    expect(response.body.token).not.toBe(undefined)
+  })
 })
 
 afterAll(() => {
