@@ -2,8 +2,8 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
 {
-    "title": "I'm lost",
-    "author": "Syd Gregsy",
-    "url": "www.btggf.com",
-    "likes": 420
+    "title": "I'm testing",
+    "author": "John Bologna",
+    "url": "www.com",
+    "likes": 11
 }
